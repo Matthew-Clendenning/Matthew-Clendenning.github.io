@@ -16,24 +16,19 @@ body {
     overflow-x: hidden;
 }
 
-.profile-pic {
-    width: 200px;
-    height: 200px;
-}
-
 .header {
     text-align: center;
     background-color: #516059;
-    padding: 30px;
+    padding: 50px;
 }
 
 .header h1 {
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
 }
 
 .navbar {
-    font-size: clamp(1rem, 2vh, 2rem);
+    font-size: clamp(1rem, 2.3vh, 2rem);
     background-color: #516059;
 }
 
@@ -58,4 +53,106 @@ li a:hover {
     background-color: #ffffff;
     color: #516059;
     border-radius: 10px;
+}
+
+.page-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.owner-heading {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.about-owner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: 300px;
+    gap: 2rem;
+}
+
+.about-text {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    height: fit-content;
+    font-size: clamp(1rem, 2vh, 2rem);
+}
+
+.profile-pic {
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20rem;
+}
+
+hr {
+    width: 80%;
+    height: 5px;
+    background-color: #516059;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.menu-item-desc img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .about-owner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;
+        height: auto;
+        padding-inline: 1rem;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-owner-container img {
+        width: auto;
+        height: 200px;
+    }
+
+    .menu {
+        padding-inline: 1rem;
+    }
+
+    .menu-item-desc img {
+        width: 100%;
+        height: 300px;
+    }
 }
