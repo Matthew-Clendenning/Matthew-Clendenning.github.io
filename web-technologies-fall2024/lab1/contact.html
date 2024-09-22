@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Savory Sushi - Contact</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Savory Sushi</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776 <!-- Hamburger icon -->
+            </div>
+        </div>
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Hours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <h2>Please choose an option of contact:</h2>
+            <select name="contact" id="contact" onchange="updateLabel()">
+                <option value="select-option"></option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <div class="input-container">
+                <div class="label-container">
+                    <form class="input-form">
+                        <label for="username" id="label">Email:</label>
+                        <input id="username" name="username" type="text" placeholder="">
+                    </form>
+                </div>
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+
+        <script src="./menuscript.js"></script>
+    </body>
+</html>

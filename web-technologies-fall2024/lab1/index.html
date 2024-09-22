@@ -7,19 +7,22 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="home">
             <h1>Savory Sushi</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776 <!-- Hamburger icon -->
+            </div>
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#hours">Hours</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu-section">Menu</a></li>
+                <li><a href="#hours-section">Hours</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
             </ul>
         </div>
         <div class="page-container">
-            <h2 class="owner-heading">Meet the Owner</h2>
+            <h2>Meet the Owner</h2>
             <div class="about-owner-container">
                 <div class="about-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> 
@@ -32,24 +35,76 @@
                 <img class="profile-pic" src="./images/my_headshot.jpg" alt="Matthew Clendenning" />
                 <!--<blockquote>The Customer is Always Right.</blockquote>-->
             </div>
-            <div class="menu">
+            <div class="hobbies">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Matthew Clendenning</th>
+                    </tr>
+                    <tr>
+                        <th>Hobby:</th>
+                        <th>Playing basketball</th>
+                    </tr>
+                    <tr>
+                        <th>Last time:</th>
+                        <th>Yesterday</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="menu" id="menu-section">
                 <h2>Take a look at Our Menu!</h2>
                 <hr>
                 <div class="menu-items">
                     <div class="menu-item-desc">
+                        <h3>Spicy Salmon Roll</h3>
                         <img src="./images/Spicy-Salmon-Roll.jpg" alt="Spicy Salmon Sushi Rolls" />
+                        <p>Short description about sushi roll</p>
                     </div>
                     <div class="menu-item-desc">
+                        <h3>Philadelphia Sushi Roll</h3>
                         <img src="./images/philly-sushi-roll.jpg" alt="Philadelphia Sushi Rolls" />
+                        <p>Short description about sushi roll</p>
                     </div>
                     <div class="menu-item-desc">
+                        <h3>Avocado Sushi Roll</h3>
                         <img src="./images/avocado-rolls.jpg" alt="Avocado Sushi Rolls" />
+                        <p>Short description about sushi roll</p>
                     </div>
-                    <div class="menu-item-desc">
-                        <img src="" alt=" Sushi Rolls" />
+                </div>
+            </div>
+            <div class="hours" id="hours-section">
+                <h4>Hours:</h2>
+                <hr>
+                <div class="hours-container">
+                    <div class="day-section">
+                        <ul>
+                            <li>Monday:</li>
+                            <li>Tuesday:</li>
+                            <li>Wednesday:</li>
+                            <li>Thursday:</li>
+                            <li>Friday:</li>
+                            <li>Sat/Sun:</li>
+                        </ul>
+                    </div>
+                    <div class="time-section">
+                        <ul>
+                            <li>11 AM - 8:30 PM</li>
+                            <li>11 AM - 8:30 PM</li>
+                            <li>11 AM - 8:30 PM</li>
+                            <li>11 AM - 8:30 PM</li>
+                            <li>11 AM - 10 PM</li>
+                            <li>Closed</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <center>
+                <blockquote>The Customer is Always Right.</blockquote>
+            </center>
+        </footer>
+
+        <script src="./menuscript.js"></script>
     </body>
 </html>
